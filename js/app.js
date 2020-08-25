@@ -23,11 +23,8 @@ var timer = setInterval(function(){
   faceimage.src = images[i++];
 }, 2000)
 
-function recursiveTimer() {
-  return timer;
-}
-// Button Event Handlers
 
+// Button Event Handlers
 darkButton.onclick = () => {
   body.classList.replace('light', 'dark');
   localStorage.setItem('theme', 'dark');
