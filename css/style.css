@@ -333,7 +333,12 @@ label {
     cursor: pointer;
 }
 
-a:hover {
+.ul-pusher {
+    position:relative;
+    left: 25px;
+}
+
+a:hover, span:hover {
     transition: all 0.2s ease;
     color: var(--bg-footer);
 }
