@@ -59,7 +59,7 @@ window.onclick = (event) => {
 
 // TYPED JS STUFF
 var options = {
-  strings: ['Results driven &amp; flexible'],
+  strings: ['Software engineer', 'Lover of burgers', 'Masochist of vanilla JavaScript', 'Coffee consumer', 'TypeScript advocate', '.NET Developer'],
   startDelay: 1000,
   typeSpeed: 40,
   backSpeed: 10,
