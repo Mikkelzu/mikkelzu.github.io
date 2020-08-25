@@ -416,3 +416,16 @@ label {
       height: inherit;
       margin-left: 3px;
   }
+
+  /* Custom colours for my toast library (set dark and light) */
+.dark-toast {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}
+
+.light-toast {
+    olor: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+}

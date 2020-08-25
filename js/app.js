@@ -17,12 +17,13 @@ if (theme) {
 darkButton.onclick = () => {
   body.classList.replace('light', 'dark');
   localStorage.setItem('theme', 'dark');
+  Toast('dark-toast', {text: 'Set to dark!', icon: 'far fa-check-circle fa-lg'});
 };
 
 lightButton.onclick = () => {
   body.classList.replace('dark', 'light');
-
   localStorage.setItem('theme', 'light');
+  Toast('light-toast', {text: 'Set to light!', icon: 'far fa-check-circle fa-lg'});
 };
 
 
