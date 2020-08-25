@@ -13,7 +13,7 @@ if (theme) {
 }
 
 
-var images = ["./img/my_face_smile.jpg","./img/my_face_smile_3.jpeg"]
+var images = ["./img/my_face_smile.jpg","./img/my_Face_smile_3.jpeg"]
 var faceimage = document.getElementById("faceimage");
 var i = 0;
 var timer = setInterval(function(){
