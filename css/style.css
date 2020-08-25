@@ -325,13 +325,15 @@ label {
     border-top: 1px solid var(--bg-footer);
 }
 
+.fa-bigger {
+    font-size: 44px;
+}
 /* overwrites for icons at the bottom to be bigger */
 .fa-github, .fa-linkedin-in, .fa-id-card {
-    font-size: 44px;
     cursor: pointer;
 }
 
-.fa-github:hover, .fa-linkedin-in:hover, .fa-id-card:hover {
+a:hover {
     transition: all 0.2s ease;
     color: var(--bg-footer);
 }
@@ -370,7 +372,7 @@ label {
 .modal-header {
     padding: 2px 16px;
     background-color: var(--bg);
-    color: white;
+    color: var(--text);
   }
   
   /* Modal Body */
@@ -425,7 +427,7 @@ label {
 }
 
 .light-toast {
-    olor: #818182;
+    color: #818182;
     background-color: #fefefe;
     border-color: #fdfdfe;
 }

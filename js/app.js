@@ -12,6 +12,21 @@ if (theme) {
   body.classList.add(theme);
 }
 
+
+var images = ["./img/my_face_smile.jpg","./img/my_face_smile_3.jpeg"]
+var faceimage = document.getElementById("faceimage");
+var i = 0;
+var timer = setInterval(function(){
+  // If we've reached the end of the array...
+  if(i >= images.length){
+   i = 0;
+  }
+  faceimage.src = images[i++]; // Sete the path to the current counter and then increase the counter
+}, 2000)
+
+function recursiveTimer() {
+  return timer;
+}
 // Button Event Handlers
 
 darkButton.onclick = () => {
