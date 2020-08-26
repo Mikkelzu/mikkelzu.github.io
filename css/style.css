@@ -59,7 +59,7 @@ img {
 
 .dropdown {
     position: absolute;
-    width: 500px;
+    width: 100%;
     opacity: 0;
     z-index: 2;
     background: var(--bg-dropdown);
@@ -82,7 +82,7 @@ img {
 }
 
 
-.has-dropdown:focus-within .dropdown   {
+.has-dropdown:focus .dropdown  {
     opacity: 1;
     pointer-events: auto;
 }

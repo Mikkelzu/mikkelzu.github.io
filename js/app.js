@@ -3,6 +3,17 @@
 const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 const body = document.body;
+const dropdownBtn = document.getElementById('dropdown-theme');
+
+dropdownBtn.onclick = () => {
+  
+  var dropdown = document.getElementById('dropdown');
+  if (dropdown.style.opacity == 0) {
+    dropdown.style.opacity = 1;
+  } else {
+    dropdown.style.opacity = 0;
+  }
+}
 
 // Apply the cached theme on reload
 
