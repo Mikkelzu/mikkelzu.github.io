@@ -1,3 +1,7 @@
+
+body {
+    overflow-x: hidden;
+}
 /*
 Toast
 */
@@ -8,6 +12,7 @@ Toast
     display: none;
     position: absolute;
     border: 1px solid grey;
+    width: auto;
 }
 
 .toast-text {
@@ -70,6 +75,79 @@ Toast
     background-color: #cce5ff;
     border-color: #b8daff;
 }
+
+/*
+Modal
+*/
+.modal {
+    min-height: 500px;
+    width: 600px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 6px;
+    
+}
+.modal-container {
+    padding: 10px;
+    position: inherit;
+}
+.modal-header {
+    margin-bottom: 5px;
+    min-height: 50px;
+}
+.modal-body {
+    border: 1px darkslategrey solid;
+    background-color: lightgrey;
+    min-height: 400px;
+    margin-bottom: 5px;
+}
+.modal-footer {
+    min-height: 50px;
+    border-top: 1px solid darkslategrey;
+}
+
+.modal-title {
+    font-size: 26px;
+}
+
+.modal-btn {
+    margin-top: 10px;
+}
+.footer-button-wrapper {
+    float:right;
+}
+
+
+/*
+    Table stylings
+*/
+.table-g {
+    display: table;
+    width: 100%;
+}
+
+.table-g-row {
+    display: table-row;
+}
+
+.table-g-heading {
+    display: table-header-group;
+}
+
+.table-g-cell, .table-g-head {
+    border: 1px solid #999999;
+    display: table-cell;
+    padding: 3px 10px;
+}
+.table-g-head {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.table-g-body {
+    display: table-row-group;
+}
+
 /*
 standard styling bts etc
 */
