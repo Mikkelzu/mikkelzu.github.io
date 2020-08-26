@@ -49,6 +49,11 @@ lightButton.onclick = () => {
 };
 
 
+function showDocumentationGiga() {
+  alert('test')
+}
+
+
 // Modal opening
 var modal = document.getElementById('contact-modal');
 var btn = document.getElementById('open-contact-modal')
