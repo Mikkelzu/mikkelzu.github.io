@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="js/giga.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script defer src="js/app.js"></script>
-
-    
 </head>
 
 <body class="light">
@@ -54,9 +53,8 @@
         </div>
 
         <div class="flex-container justify-content-center">
-            <div class="col vl">
+            <div class="col">
                 <h3 class="text-center h3-content-title">Front End</h3>
-                <p class="text-center">
                 <ul class="ul-pusher">
                     <li><span class="hover-line"><i class="fab fa-bootstrap"></i> Bootstrap 4</span></li>
                     <li><span class="hover-line"><i class="fab fa-js-square"></i> JavaScript</span></li>
@@ -65,12 +63,10 @@
                     <li><span class="hover-line"><i class="fab fa-react"></i> React.JS</span></li>
                     <li><span class="hover-line"><i class="fab fa-sass"></i> SCSS</span></li>
                 </ul>
-                </p>
             </div>
 
-            <div class="col vl">
+            <div class="col">
                 <h3 class="text-center h3-content-title">Back End</h3>
-                <p class="text-center">
                 <ul class="ul-pusher">
                     <li><span class="hover-line"><i class="far fa-file-code"></i> .NET Core</span></li>
                     <li><span class="hover-line"><i class="fab fa-node-js"></i> Node.JS</span></li>
@@ -78,12 +74,10 @@
                     <li><span class="hover-line"><i class="fab fa-js-square"></i> NestJS</span></li>
                     <li><span class="hover-line"><i class="fab fa-php"></i> PHP</span></li>
                 </ul>
-                </p>
             </div>
 
             <div class="col">
                 <h3 class="text-center h3-content-title">Databasing</h3>
-                <p class="text-center">
                     <ul class="ul-pusher">
                         <li><span class="hover-line"><i class="fas fa-database"></i> MySQL</span></li>
                         <li><span class="hover-line"><i class="fas fa-database"></i> MSSQL</span></li>
@@ -91,7 +85,6 @@
                         <li><span class="hover-line"><i class="fas fa-database"></i> MariaDB</span></li>
                         <li><span class="hover-line"><i class="fas fa-database"></i> Firebase</span></li>
                     </ul>
-                </p>
             </div>
         </div>
 
@@ -176,6 +169,23 @@
                                 class="fab fa-linkedin-in"></i> Michael Lindemans</a>
                         </span>
                     </div>
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+                <h4>Footer</h4>
+            </div> -->
+        </div>
+    </div>
+
+    <div id="docs-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h3>Web Component Documentation</h3>
+            </div>
+            <div class="modal-body">
+                <div class="flex">
+                    <div id="md"  class="col"></div>
                 </div>
             </div>
             <!-- <div class="modal-footer">

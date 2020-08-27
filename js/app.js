@@ -49,15 +49,29 @@ lightButton.onclick = () => {
 };
 
 
-function showDocumentationGiga() {
-  alert('test')
-}
 
 
 // Modal opening
 var modal = document.getElementById('contact-modal');
 var btn = document.getElementById('open-contact-modal')
-var closeModalBtn = document.getElementsByClassName('close')[0]
+var closeModalBtn = document.getElementsByClassName('close')[0];
+
+
+var docsModal = document.getElementById('docs-modal');
+var closeDocsModal = document.getElementsByClassName('close')[1];
+
+
+function showDocumentationGiga() {
+  docsModal.style.display = 'block';
+}
+
+closeDocsModal.onclick = () => {docsModal.style.display = 'none'}
+
+var file = 'https://raw.githubusercontent.com/Mikkelzu/giga.webcomponents/master/README.md';
+
+fetch(file)
+	.then(r => r.text())
+	.then(t => document.getElementById('md').innerHTML = marked(t));
 
 btn.onclick = () => { modal.style.display = 'block' }
 closeModalBtn.onclick = () => { modal.style.display = 'none' }

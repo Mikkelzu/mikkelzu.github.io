@@ -380,7 +380,10 @@ a:hover, span:hover {
   }
   
   /* Modal Body */
-  .modal-body {padding: 2px 16px;}
+  .modal-body {
+      padding: 2px 16px;
+      background-color: transparent !important;
+}
   
   /* Modal Footer */
   .modal-footer {
