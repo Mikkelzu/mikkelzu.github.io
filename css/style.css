@@ -4,7 +4,7 @@ body {
     font-family: 'Source Code Pro', monospace;
     color: var(--text);
     background: var(--bg);
-    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 ul {
@@ -20,9 +20,9 @@ a {
 
 
 header {
-    min-height: 375px;
+    min-height: 370px;
     padding: 1em;
-    clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+    /*clip-path: polygon(50% 0%, 100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);*/
     background: var(--bg-nav);
     margin-bottom: 1em;
     padding-bottom: 3.5em;
@@ -38,6 +38,15 @@ img {
     margin: 2em 0 0;
     width: 180px;
     height: 180px;
+}
+
+.name {
+    color: var(--text);
+    transition: all 0.3s;
+}
+
+.sub-title:hover, .name:hover {
+    color: var(--border-color)
 }
 
 /* Navbar */
@@ -189,6 +198,7 @@ img {
 
 .sub-title {
     font-size: 12px;
+    transition: all 0.3s;
 }
 
 
@@ -279,8 +289,13 @@ label {
 
 /* custom cols */
 
+.row {
+    width: 100%;
+    margin: 5px;
+}
+
 .col {
-    max-width: 100%;
+    width: 100%;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -321,12 +336,12 @@ label {
     width: 100%;
     color: var(--text);
     background: var(--bg);
-    height: 75px;
+    height: 50px;
     border-top: 1px solid var(--bg-footer);
 }
 
 .fa-bigger {
-    font-size: 44px;
+    font-size: 30px;
 }
 /* overwrites for icons at the bottom to be bigger */
 .fa-github, .fa-linkedin-in, .fa-id-card {
@@ -361,13 +376,13 @@ a:hover, span:hover {
 .close {
     color: #aaa;
     float:right;
-    font-size: 36px;
+    font-size: 52px;
     font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: var(--text);
     text-decoration: none;
     cursor: pointer;
 }
@@ -437,3 +452,16 @@ a:hover, span:hover {
     background-color: #fefefe;
     border-color: #fdfdfe;
 }
+
+/*
+mobvile stuff
+*/
+
+@media only screen and (max-width: 768) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .col {
+        width: 100%;
+    }
+  }
