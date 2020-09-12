@@ -44,7 +44,8 @@ img {
     transition: all 0.3s;
 }
 
-.sub-title:hover, .name:hover {
+.sub-title:hover,
+.name:hover {
     color: var(--border-color)
 }
 
@@ -75,14 +76,14 @@ img {
 
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 3rem;
     margin-top: 2rem;
     padding: 0.5rem;
-   
+
     box-shadow: rgba(2, 8, 20, 0.1) 0px 0.175em 0.5em;
     transform: translateX(-50%);
 
@@ -90,7 +91,7 @@ img {
 }
 
 
-.has-dropdown:focus .dropdown  {
+.has-dropdown:focus .dropdown {
     opacity: 1;
     pointer-events: auto;
 }
@@ -143,7 +144,7 @@ img {
     --border-color: var(--blue);
     --bg-footer: var(--gray3)
 }
-  
+
 
 .dark {
     --bg: var(--gray5);
@@ -174,6 +175,7 @@ img {
     from {
         filter: hue-rotate(0deg);
     }
+
     to {
         filter: hue-rotate(360deg);
     }
@@ -181,8 +183,8 @@ img {
 
 
 .nav-item:hover {
-    animation: color-rotate-text  1s;
-    animation-iteration-count: infinite; 
+    animation: color-rotate-text 1s;
+    animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
@@ -212,6 +214,7 @@ img {
     flex-direction: row;
     justify-content: center;
 }
+
 .flex-container-column {
     display: flex;
     flex-direction: column;
@@ -220,6 +223,7 @@ img {
 .justify-content-center {
     justify-content: center;
 }
+
 .text-center {
     text-align: center;
 }
@@ -264,7 +268,7 @@ label {
     background-clip: padding-box;
     border: 1px solid var(--bg-footer);
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .btn-submit {
@@ -294,6 +298,10 @@ label {
 
 /* custom cols */
 
+.push-down {
+    margin-bottom: 50px !important;
+}
+
 .row {
     width: 100%;
     margin: 5px;
@@ -309,6 +317,7 @@ label {
     margin-top: 15px;
     width: 33%;
 }
+
 .col-6 {
     margin-top: 15px;
     width: 50%;
@@ -319,6 +328,7 @@ label {
     display: inline-block;
     padding: 5px;
 }
+
 .box-form {
     width: 100%;
     margin: 5px;
@@ -335,29 +345,32 @@ label {
 }
 
 .footer {
-    position: relative;
+    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
     color: var(--text);
     background: var(--bg);
-    height: 50px;
     border-top: 1px solid var(--bg-footer);
 }
 
 .fa-bigger {
-    font-size: 30px;
+    font-size: 50px;
 }
+
 /* overwrites for icons at the bottom to be bigger */
-.fa-github, .fa-linkedin-in, .fa-id-card {
+.fa-github,
+.fa-linkedin-in,
+.fa-id-card {
     cursor: pointer;
 }
 
 .ul-pusher {
-    position:relative;
+    position: relative;
 }
 
-a:hover, span:hover {
+a:hover,
+span:hover {
     transition: all 0.2s ease;
     color: var(--bg-footer);
 }
@@ -374,13 +387,13 @@ a:hover, span:hover {
     height: 100%;
     overflow: auto;
     color: var(--text);
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .close {
     color: #aaa;
-    float:right;
+    float: right;
     font-size: 52px;
     font-weight: bold;
 }
@@ -397,55 +410,62 @@ a:hover, span:hover {
     padding: 2px 16px;
     background-color: var(--bg);
     color: var(--text);
-  }
-  
-  /* Modal Body */
-  .modal-body {
-      padding: 2px 16px;
-      background-color: transparent !important;
 }
-  
-  /* Modal Footer */
-  .modal-footer {
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+    background-color: transparent !important;
+}
+
+/* Modal Footer */
+.modal-footer {
     padding: 2px 16px;
     background-color: var(--bg);
     color: white;
-  }
-  
-  /* Modal Content */
-  .modal-content {
+}
+
+/* Modal Content */
+.modal-content {
     background-color: var(--bg);
     position: relative;
     margin: auto;
     border: 1px solid var(--bg-footer);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
     animation-duration: 0.4s
-  }
-  
-  /* Add Animation */
-  @keyframes animatetop {
-    from {top: -300px; opacity: 0}
-    to {top: 0; opacity: 1}
-  }
+}
 
-  .repo-link {
-      text-decoration: none;
-      transition: ease 0.2s;
-      cursor: pointer;
-  }
+/* Add Animation */
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
 
-  .repo-link:hover {
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.repo-link {
+    text-decoration: none;
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+
+.repo-link:hover {
     color: var(--bg-footer);
-  }
+}
 
-  .flex-container >.vl {
-      border-right: 3px solid var(--bg-footer);
-      height: inherit;
-      margin-left: 3px;
-  }
+.flex-container>.vl {
+    border-right: 3px solid var(--bg-footer);
+    height: inherit;
+    margin-left: 3px;
+}
 
-  /* Custom colours for my toast library (set dark and light) */
+/* Custom colours for my toast library (set dark and light) */
 .dark-toast {
     color: #1b1e21;
     background-color: #d6d8d9;
@@ -461,21 +481,21 @@ a:hover, span:hover {
 
 
 
-  /*
+/*
   card stuff
   */
 
-  .card-list {
+.card-list {
     display: flex;
     padding: 3rem;
     overflow-x: scroll;
-    justify-content: center;
 }
 
 .card-list::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
+
 .card-list::-webkit-scrollbar-thumb {
     background: none;
     border-radius: 10px;
@@ -488,7 +508,7 @@ a:hover, span:hover {
 
 
 .card {
-    height:600px;
+    height: 600px;
     width: 400px;
     min-width: 250px;
     padding: 1.5rem;
@@ -504,7 +524,8 @@ a:hover, span:hover {
     position: relative;
 }
 
-.card:focus-within~.card, .card:hover~.card {
+.card:focus-within~.card,
+.card:hover~.card {
     transform: translateX(130px);
 }
 
@@ -545,7 +566,6 @@ a:hover, span:hover {
     color: inherit;
     border: 0;
     display: inline-block;
-    cursor: pointer;
 }
 
 /* .card-header h2:hover {
@@ -628,7 +648,7 @@ a:hover, span:hover {
 }
 
 .tags span:hover {
-    background: linear-gradient(90deg,var(--purple),var(--blue));
+    background: linear-gradient(90deg, var(--purple), var(--blue));
     text-shadow: none;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -639,9 +659,28 @@ a:hover, span:hover {
 
 
 
+.header-card {
+    background: linear-gradient(180deg, var(--purple), var(--blue));
+    position: relative;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 3rem;
+}
 
 
+.header-card-title {
+    font-size: 1.6rem;
+    margin: 0 0 .5rem;
+    transition: all ease-in-out 0.3s;
+}
 
+
+.header-card p {
+    margin: 0;
+    font-size: 16px;
+}
 
 
 
@@ -655,25 +694,17 @@ mobvile stuff
         overflow-x: scroll;
         justify-content: flex-start;
     }
+
     [class*="col-"] {
         width: 100%;
     }
+
     .col {
         width: 100%;
     }
 
-   footer {
-    position: relative !important;
-    margin-top: 50px;
-   }
-  }
-
-  @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .card-list {
-        overflow-x: scroll;
-        justify-content: flex-start;
+    footer {
+        position: relative !important;
+        margin-top: 50px;
     }
 }
