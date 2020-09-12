@@ -212,7 +212,12 @@ img {
 .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.flex-container-no-justify {
+    display: fex;
+    flex-direction: row;
 }
 
 .flex-container-column {
