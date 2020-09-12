@@ -30,7 +30,6 @@ a {
 }
 
 main {
-    min-height: 1000px;
     padding: 2rem;
 }
 
@@ -459,26 +458,6 @@ a:hover, span:hover {
     border-color: #fdfdfe;
 }
 
-/*
-mobvile stuff
-*/
-
-@media only screen and (max-width: 768) {
-    .card-list {
-        overflow-x: scroll;
-    }
-    [class*="col-"] {
-        width: 100%;
-    }
-    .col {
-        width: 100%;
-    }
-
-   footer {
-    position: relative !important;
-    margin-top: 50px;
-   }
-  }
 
 
 
@@ -490,6 +469,7 @@ mobvile stuff
     display: flex;
     padding: 3rem;
     overflow-x: scroll;
+    justify-content: center;
 }
 
 .card-list::-webkit-scrollbar {
@@ -644,6 +624,7 @@ mobvile stuff
     padding: .2rem .85rem .25rem;
     position: relative;
     cursor: default;
+    display: inline-block;
 }
 
 .tags span:hover {
@@ -654,4 +635,45 @@ mobvile stuff
     -webkit-box-decoration-break: clone;
     background-clip: text;
     border-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+mobvile stuff
+*/
+
+@media only screen and (max-width: 768) {
+    .card-list {
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+    [class*="col-"] {
+        width: 100%;
+    }
+    .col {
+        width: 100%;
+    }
+
+   footer {
+    position: relative !important;
+    margin-top: 50px;
+   }
+  }
+
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .card-list {
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
 }
