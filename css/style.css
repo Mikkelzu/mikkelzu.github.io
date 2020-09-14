@@ -515,7 +515,6 @@ span:hover {
 .card {
     height: 600px;
     width: 400px;
-    min-width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
     background: var(--card);
@@ -527,6 +526,15 @@ span:hover {
     scroll-snap-align: start;
     clear: both;
     position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+    .card {
+        width: 290px;
+    }
+    .header-card {
+        width: 50%;
+    }
 }
 
 .card:focus-within~.card,
