@@ -161,6 +161,8 @@ a {
     overflow: hidden;
     display:flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
   }
   
   /* Style the links inside the navigation bar */
