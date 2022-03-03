@@ -210,5 +210,9 @@ a {
     .item {
         display: none;
     }
+    .content-flex-columns {
+        align-items: center;
+        flex-direction: column;
+    }
   }
   
