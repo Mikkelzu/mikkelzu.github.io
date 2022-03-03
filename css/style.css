@@ -18,6 +18,7 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #555;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/code-hero.jpeg');
     align-self: center;
     height: 500px;
     background-repeat: no-repeat;
@@ -30,8 +31,7 @@ a {
 .text {
     font-size: 1.4rem;
     text-align: center;
-    color: white;
-    
+    color: #fff;
 }
 
 .main {
@@ -62,6 +62,26 @@ a {
 .footer {
     color: #fff;
     height: 175px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.footer a:hover {
+    background-color: #630142;
+    color: white;
+}
+
+.contact-span {
+    display:block;
+    margin-bottom: 7px;
 }
 
 .hero-mini {
@@ -129,8 +149,12 @@ a {
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #63014234;
+    background-color: #ac0072;
     color: white;
+  }
+
+  .topnav a.active:hover {
+      background-color: #555;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
