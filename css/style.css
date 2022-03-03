@@ -181,6 +181,10 @@ a {
     background-color: #630142;
     color: white;
   }
+
+  .item {
+      display: inline-block;
+  }
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
@@ -197,8 +201,14 @@ a {
     display: none;
   }
 
+  .flex-wrap {
+      flex-wrap: wrap;
+  }
+
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
-    .topnav .right a {font-size: 13px;}
+    .item {
+        display: none;
+    }
   }
   
