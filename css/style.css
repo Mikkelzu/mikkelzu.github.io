@@ -43,8 +43,8 @@ a {
 .first-block {
     background-color: #222;
     color: #fff;
-    max-height: 500px;
-    height: 500px;
+    min-height: 500px;
+    padding: 15px;
 }
 
 .tech {
@@ -55,8 +55,8 @@ a {
 .second-block {
     background-color: #555;
     color: #fff;
-    max-height: 500px;
-    height: 500px;
+    min-height: 500px;
+    padding: 15px;
 }
 
 .footer {
@@ -82,6 +82,12 @@ a {
 .contact-span {
     display:block;
     margin-bottom: 7px;
+}
+
+.image-me {
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
 }
 
 .hero-mini {
