@@ -28,7 +28,7 @@ a:hover {
     align-self: center;
     height: 500px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
@@ -42,7 +42,7 @@ a:hover {
     align-self: center;
     height: 175px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
