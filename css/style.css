@@ -13,8 +13,12 @@ ul {
 }
 
 a {
-    color: currentColor;
-    text-decoration: none;
+    color: inherit;
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+a:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
 }
 .hero {
     display: flex;
@@ -194,13 +198,33 @@ a {
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+    display: inline-block;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  .topnav a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 5px;
+    position: relative;
+    background: #333;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .topnav a:hover:after { 
+    width: 100%; 
+    left: 0; 
   }
   
   /* Change the color of links on hover */
@@ -208,6 +232,7 @@ a {
     background-color: #009e96;
     color: #333;
     transition: all 0.3s ease-in-out;
+
   }
 
   .item {
