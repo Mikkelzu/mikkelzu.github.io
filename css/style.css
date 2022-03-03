@@ -20,9 +20,23 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #555;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/code-hero.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/c-sharp-ide-hero-2.png');
     align-self: center;
     height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-hero-spacing {
+    display: flex;
+    flex-direction: column;
+    background-color: #555;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/c-sharp-ide-hero-2.png');
+    align-self: center;
+    height: 175px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -50,6 +64,13 @@ a {
   .social-link {
       display:block;
   }
+
+  .border-content {
+      border: 1px solid #444;
+      padding: 25px;
+      border-radius: 6px;
+      margin: 5px;
+  }
   
   /* The typing effect */
   @keyframes typing {
@@ -60,7 +81,7 @@ a {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #ac0072; }
+    50% { border-color: #009e96; }
   }
 
 .main {
@@ -88,7 +109,8 @@ a {
     padding: 15px;
 }
 
-.footer {
+.footer {  
+    background-color: #222;background-color: #222;
     color: #fff;
     height: 175px;
     font-size: 14px;
@@ -103,7 +125,7 @@ a {
 }
 
 .footer a:hover {
-    background-color: #630142;
+    background-color: #009e96;
     color: white;
 }
 
@@ -183,8 +205,9 @@ a {
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #630142;
-    color: white;
+    background-color: #009e96;
+    color: #333;
+    transition: all 0.3s ease-in-out;
   }
 
   .item {
@@ -193,12 +216,13 @@ a {
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #ac0072;
-    color: white;
+    background-color: #008079;
+    color: #fff;
   }
 
   .topnav a.active:hover {
-      background-color: #555;
+      background-color: #009e96;
+      color: #333;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
