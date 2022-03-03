@@ -97,7 +97,6 @@ a {
 .footer a {
     color: #f2f2f2;
     text-align: center;
-    padding: 10px;
     text-decoration: none;
     font-size: 13px;
     border-radius: 3px;
@@ -106,6 +105,10 @@ a {
 .footer a:hover {
     background-color: #630142;
     color: white;
+}
+
+.contact-link {
+    padding: 3px;
 }
 
 .contact-span {
@@ -217,7 +220,7 @@ a {
         flex-direction: column;
     }
     .typewriter {
-        font-size: 13px;
+        font-size: 12px;
     }
   }
   
