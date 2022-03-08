@@ -195,6 +195,43 @@ a:hover {
     position: fixed;
     width: 100%;
   }
+
+  .ext {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+
+  .ext:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 5px;
+    position: relative;
+    background: #333;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  .ext:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .ext:hover {
+    background-color: #009e96;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+
+  }
   
   /* Style the links inside the navigation bar */
   .topnav a {
